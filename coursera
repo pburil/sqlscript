@@ -1,0 +1,48 @@
+WHERE = argumento de filtragem no SQL
+* = seleciona todos os dados no sql
+
+SELECT *
+FROM data_base_movie
+WHERE Genre = 'Comedy'
+
+
+SELECT * 
+FROM customer
+WHERE country = 'Brazil'
+
+
+Sort Sheet or Sort Range 
+
+Sort Sheet = organizar toda a planilha de acordo com um filtro de uma coluna
+
+Sort Range = organizar um intervalo de acordo com uma coluna
+
+
+SELECT * 
+FROM 'movie_data.movies'
+WHERE Genre = 'COMEDY'
+AND Revenue > 300000000
+ORDER BY Release_Date DESC
+
+
+SELECT *
+FROM 'Tracks'
+WHERE Composer = 'Chris Cornell'
+ORDER BY Genreld DESC
+
+SELECT * 
+FROM 'bigquery-public-data.sdoh_cdc_wonder_natality.county_natality`
+LIMIT 1000
+
+SELECT * 
+FROM 'bigquery-public-data.sdoh_cdc_wonder_natality.county_natality`
+ORDER BY Births
+DESC
+LIMIT 10
+
+SELECT *
+FROM 'bigquery-public-data.sdoh_cdc_wonder_natality.county_natality`
+WHERE Year = '2018-01-01'
+ORDER BY Births
+DESCLIMIT 10 (ou 20 ou 30 ou 40)
+
